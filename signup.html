@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Login/SignUp</title>
+  </head>
+  <body>
+    <nav>
+      <button class="btn1" onclick="location.href='index.html'">Go Back</button>
+    </nav>
+    
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login</div>
+        <div class="title SignUp">SignUp</div>
+      </div> 
+      
+      <div class="form-container">
+        <div class="slide-control">
+          <input type="radio" name="slider" id="login" checked>
+          <input type="radio" name="slider" id="signup">
+         <label for="login" class="slide login">Login</label>
+         <label for="signup" class="slide signup">SignUp</label>
+         <div class="slide-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="email" placeholder="Email Address" required>
+              </div>
+
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+                </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></a></div>
+            <div class="field" >
+              <input type="submit" value="Login">
+        
+            </div>
+            <div class="signUp-link">Not a member? <a href="#">Sign Up</a></div> 
+          </form>
+          <script>
+            function verifyPassword() {  
+                   var pw = document.getElementById("pass").value;  
+                   var pw1=document.getElementById("rePass").value;
+                   if(pw != pw1)
+                   {
+                     document.getElementById("message").innerHTML = "**Password doesnot match";  
+                   }
+                 }
+         </script>
+          <form method="" action="#" class="signup" onsubmit="return verifyPassword()" >
+            <div class="field">
+              <input type="email" placeholder="Email Address" required>
+              </div>
+
+              <div class="field">
+                <input type="password" id="pass" placeholder="Password" required>
+                <span id="message"></span>
+                </div>
+                <div class="field">
+                  <input type="password" id="rePass" placeholder="Confirm Password" required>
+                  <span id="message"></span>
+                  </div>
+            <div class="field" >
+              <input type="submit"  value="SignUp">
+              
+        
+            </div>
+            <div class="login-link">ALready a member? <a href="#">Login</a></div> 
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+    <script src="app.js">      
+   </script>
+  </body>
+</html>

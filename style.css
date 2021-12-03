@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: #313131;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn{
+    background: none;
+    border:none;
+}
+.navbar
+{
+    float: right;
+    background: #0082e0;
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+
+}
+
+label.Logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.navbar ul 
+{
+float: right;
+margin-right: 0 20px;
+}
+
+.navbar ul li{
+display: inline-block;
+  line-height: 80px;
+  margin: 0 25px;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+a.active, a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+.checkbtn
+{
+   
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+.checkbtn:hover{
+    cursor: pointer;
+}
+#check
+{
+    display: none;
+}
+@media(max-width: 952px)
+{
+    label.Logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .navbar ul li a {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 858px){
+.checkbtn{
+    display: block;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left:-100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.navbar ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+
+}
+.navbar ul li a{
+font-size: 20px;
+}
+a.active, a:hover
+{
+    background: none;
+    color: #0082e6;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+}
+.gallery
+{
+    display: inline-flex;
+}
+
+.welcome
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    justify-content:center ;
+    padding-left: 30px;
+    padding-right: 545px;
+    margin:0 px;
+    background: black;
+    opacity: 50%;
+}
+.welcome h1{
+    line-height: 80px;
+}
+
+.welcome h1, .welcome p{
+ 
+    align-content: center;
+    padding-left: 250px;
+}
+
+.slider
+{
+  
+    width: 500px;
+    height: 300px;
+    background: url(images/pexels-photo-1229861.jpeg);
+   
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%
+    {
+        background: url(images/pexels-photo-1229861.jpeg);
+
+    }
+    50%
+    {
+        background: url(images/pexels-photo-1714208.jpeg);
+
+    }
+    75%
+    {
+        background: url(images/pexels-photo-3861969.jpeg);
+
+    }
+    100%
+    {
+        background: url(images/pexels-photo-792345.jpeg);
+
+    }
+
+}
+@media(max-width: 858px)
+{
+    .gallery{
+        display: block;
+        overflow: hidden;
+    }
+
+    
+}
+
+.view
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.view h1{
+    line-height: 80px;
+    font-weight: 35px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color:black;
+    opacity: 50%;
+    width: 100%;
+}
+.view h1:hover{
+    color: black;
+    background:#0082e6;
+    
+    
+}
+.box-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-evenly;
+}
+
+.box1 h3{
+    line-height: 20px;
+}
+
+.box1 img{
+    width: 259px;
+    height: 194px;
+    transition: transform 0.2s;
+}
+
+.box1 img:hover{
+    transform: scale(1.05);
+   
+}
+
+
+
+
+@media(max-width: 768px)
+{
+.box1 {
+    width: 100%;
+}
+}
+    
+
