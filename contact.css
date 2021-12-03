@@ -1,0 +1,14 @@
+.Contact{
+    color:white;
+}
+
+.Contact h3{
+    text-align: center;
+    background: black;
+    line-height: 50px;
+}
+
+.Contact h3 p{
+    text-align: center;
+    line-height: 80px;
+}

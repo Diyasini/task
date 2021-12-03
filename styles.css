@@ -18,7 +18,7 @@ html,body
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100px;*/
-   background: -webkit-linear-gradient(left,#105e78,#addded);
+   background: -webkit-linear-gradient(left,#313131,#8d8989);
 }
 .btn1{
     background: none;
@@ -44,7 +44,7 @@ html,body
     background: #fff;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: 0px 15px 20px rgba(185, 19, 19, 0.938);
+    box-shadow: 0px 15px 20px rgba(50, 43, 78, 0.938);
 }
 
 .wrapper .title-text{
@@ -97,7 +97,7 @@ overflow: hidden;
     z-index: 0;
     border-radius: 5px;
     transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
-    background: -webkit-linear-gradient(left,#068a1e,#4fd668);
+    background: -webkit-linear-gradient(left,#b2d1e9,#1b9bff);
 
 }
 input[type="radio"]
@@ -165,7 +165,7 @@ transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
  text-decoration: underline;
 }
 .form-inner form .login-link a{
-    color: #bd171f;
+    color: #1b9bff;
     text-decoration: none;
 }
 .form-inner form .login-link{
@@ -184,5 +184,5 @@ form .field input[type="submit"]
     padding-left: 0px;
     border:none;
     cursor: pointer;
-    background: -webkit-linear-gradient(left,#068a1e,#4fd668) ;
+    background: -webkit-linear-gradient(left,#b2d1e9,#1b9bff) ;
 }

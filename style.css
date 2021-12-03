@@ -118,11 +118,13 @@ a.active, a:hover
 }
 .gallery
 {
+    
     display: inline-flex;
 }
 
 .welcome
 {
+   
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600px;
     font-size: 20px;
@@ -178,11 +180,24 @@ a.active, a:hover
     }
 
 }
-@media(max-width: 858px)
+@media(max-width: 754px)
 {
     .gallery{
+        width: 100%;
         display: block;
+        padding-top: 80px;
         overflow: hidden;
+        
+    }
+    .gallery .welcome
+    {
+       padding: 20px;
+       padding-left: 0px;
+       opacity: 100%;
+    }
+    .welcome h1, .welcome p
+    {
+        padding: 0px;
     }
 
     
@@ -242,6 +257,10 @@ a.active, a:hover
 {
 .box1 {
     width: 100%;
+}
+.view h1
+{
+    opacity: 100%;
 }
 }
     
