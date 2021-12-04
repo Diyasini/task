@@ -32,6 +32,12 @@ label.Logo{
     font-weight: bold;
 }
 
+.Logo img{
+    margin-top: 10px;
+    height: 60px;
+}
+
+
 .navbar ul 
 {
 float: right;
