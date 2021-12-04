@@ -210,6 +210,106 @@ a.active, a:hover
     
 }
 
+.services h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height:80px ;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    opacity: 50%;
+}
+
+.services h1:hover{
+    color: black;
+    background:#0082e6;
+}
+
+
+
+.box2
+{
+    border: 2px black;
+    padding: 5px;
+    border: 1px solid white;
+    width: 500px;height: 333px;
+    margin: 10px;
+    object-fit:cover ;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    background-color: #dd7f9e;
+}
+
+.btn1
+{   
+    font-size: 16px;
+    background-color: #0082e6;
+}
+
+.btn1:hover{
+    cursor: pointer;
+}
+.gallery1{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+   
+}
+
+.contain2
+{    
+    position: absolute;
+}
+
+.content2
+{
+    align-items: center;
+    color: white;
+
+}
+
+.content2{
+    margin: 50px;
+    position: absolute;
+    top: -100%;
+    align-content: center;
+    left:0;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.contain2 img{
+    width: 488px;
+    height: 321px;
+}
+
+.box2:hover .contain2
+{
+    transform: translateY(100%);
+}
+
+
+@media(max-width:754px)
+{
+    .services h1{
+        opacity: 100%;
+    }
+    
+    
+
+    .contain2 img{
+        width: 100%;
+    }
+    
+}
+
+
+
 .view
 {
     text-align: center;
@@ -304,6 +404,8 @@ a.active, a:hover
     .input{
         margin-left:0;
         display: block;
+        border: none;
+        background: none;
     }
 }
 
